@@ -14,6 +14,8 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  entry_points:
+    - nonbonded = nonbonded.cli:cli
 
 requirements:
   host:
@@ -43,7 +45,7 @@ requirements:
     - rdkit
 
       # Plotting
-    - seaborn >= 0.11
+    - seaborn >=0.11
 
       # Statistics
     - scipy
