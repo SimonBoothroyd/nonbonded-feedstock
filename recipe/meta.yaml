@@ -1,6 +1,6 @@
 {% set name = "nonbonded" %}
-{% set version = "0.0.1a2" %}
-{% set sha256 = "39506c5b1c9555a8f79b6e6dd7174ae840ff366661299b1019c46f261064efbf" %}
+{% set version = "0.0.1a3" %}
+{% set sha256 = "c70529a448d1cf680940dd12c3171195040f097576462a4acaee75fdea9745f7" %}
 
 package:
   name: {{ name }}
