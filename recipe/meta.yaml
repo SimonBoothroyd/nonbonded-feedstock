@@ -1,6 +1,6 @@
 {% set name = "nonbonded" %}
-{% set version = "0.0.1a3" %}
-{% set sha256 = "c70529a448d1cf680940dd12c3171195040f097576462a4acaee75fdea9745f7" %}
+{% set version = "0.0.1a4" %}
+{% set sha256 = "8035a8bda53c653ac7941c74b58d6040b3897a8ef1edf1d30a12b0356189b26c" %}
 
 package:
   name: {{ name }}
@@ -37,9 +37,9 @@ requirements:
 
       # Benchmark / optimization target dependencies
     - forcebalance >=1.7.5
-    - openforcefield
+    - openforcefield >=0.8.0
     - openff-evaluator >=0.2.0
-    - openff-recharge >=0.0.1a2
+    - openff-recharge >=0.0.1a6
 
       # SMILES to SVG
     - rdkit
