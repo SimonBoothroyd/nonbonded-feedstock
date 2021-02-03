@@ -1,6 +1,6 @@
 {% set name = "nonbonded" %}
-{% set version = "0.0.1a8" %}
-{% set sha256 = "3c37eb588dc22dd0287afeb0ce480d6461c5a59a7b988f60acf3da8e10a7d6a8" %}
+{% set version = "0.0.1a9" %}
+{% set sha256 = "7b1bac75e49b882f1d669d575151ec07c30df5f001f909d435842b493b73c0d9" %}
 
 package:
   name: {{ name }}
@@ -39,7 +39,7 @@ requirements:
     - forcebalance >=1.7.5
     - openforcefield >=0.8.0
     - openff-evaluator >=0.3.2
-    - openff-recharge >=0.0.1a6
+    - openff-recharge >=0.0.1a7
 
       # SMILES to SVG
     - rdkit
