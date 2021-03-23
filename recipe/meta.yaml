@@ -1,13 +1,13 @@
 {% set name = "nonbonded" %}
-{% set version = "0.0.1a9" %}
-{% set sha256 = "7b1bac75e49b882f1d669d575151ec07c30df5f001f909d435842b493b73c0d9" %}
+{% set version = "0.0.1b1" %}
+{% set sha256 = "7fcf0ac42d8b6586965992ccec7c6283b74c4645a6a2bd76d47c9bed08e0b415" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/simonboothroyd/{{ name }}/archive/{{ version | replace("a", "-alpha.") }}.tar.gz
+  url: https://github.com/simonboothroyd/{{ name }}/archive/{{ version | replace("b", "-beta.") }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -37,9 +37,9 @@ requirements:
 
       # Benchmark / optimization target dependencies
     - forcebalance >=1.7.5
-    - openforcefield >=0.8.0
-    - openff-evaluator >=0.3.2
-    - openff-recharge >=0.0.1a7
+    - openff-toolkit-base
+    - openff-evaluator >=0.3.3
+    - openff-recharge >=0.0.1
 
       # SMILES to SVG
     - rdkit
@@ -51,7 +51,7 @@ requirements:
     - scipy
 
       # REST dependencies
-    - sqlalchemy
+    - sqlalchemy <1.4.0
     - sqlalchemy-utils
 
 test:
